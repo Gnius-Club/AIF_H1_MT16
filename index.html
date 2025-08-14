@@ -1,24 +1,281 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Playbook — 1º Preparatoria — Misión 16 - Frameworks</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
+<header>
+<h1><span class="book-icon">📋</span> <strong>Playbook Misión 16: Frameworks - Descomposición de Tareas</strong></h1>
+<div class="header-widgets">
+<div class="timer-container">
+<span id="timer">⏱️ 00:00</span>
+<button id="startStop">Start</button>
+<button id="reset">Reset</button>
+</div>
+<div class="theme-toggle">
+<i class="fas fa-sun"></i>
+<label class="switch">
+<input type="checkbox" id="theme-toggle-input">
+<span class="slider round"></span>
+</label>
+<i class="fas fa-moon"></i>
+</div>
+</div>
+</header>
+<div class="main-container">
+<aside class="activity-list">
+<h2>Actividades</h2>
+<ul>
+<li><a href="#activity-0">📝</a></li>
+<li><a href="#activity-1">1</a></li>
+<li><a href="#activity-2">2</a></li>
+<li><a href="#activity-3">3</a></li>
+<li><a href="#activity-4">4</a></li>
+<li><a href="#activity-5">5</a></li>
+</ul>
+<div class="sidebar-info">
+<p>💡 Cada actividad está diseñada para desarrollar habilidades de gestión de proyectos de IA.</p>
+<p>⏱️ Los tiempos estimados ayudan a mantener el ritmo de la misión.</p>
+</div>
+</aside>
+<main class="content">
+<div class="progress-bar">
+<div class="progress"></div>
+</div>
+<button id="toggle-dialogues">Mostrar todos los diálogos</button>
+<!-- 0) De un Vistazo -->
+<section class="activity-card" id="activity-0">
+<h2 class="activity-title">📝 De un Vistazo: Misión 16 - Frameworks</h2>
+<p class="activity-purpose">Resumen de objetivos, secuencia y entregables de la sesión.</p>
+<div class="overview">
+<section class="overview-block">
+<h3>Objetivos e “I Can”</h3>
+<ul>
+<li>Puedo comprender la importancia de la descomposición de tareas en el diseño de agentes de IA complejos.</li>
+<li>Puedo diseñar un flujo de trabajo lógico para un agente de IA, aplicando principios de descomposición de tareas.</li>
+</ul>
+</section>
+<section class="overview-block">
+<h3>Secuencia y tiempos</h3>
+<ol>
+<li>Saludo Interactivo con IA — 3 min</li>
+<li>“I Can” + Desafío — 5–7 min</li>
+<li>AI GYM — 10–12 min</li>
+<li>Brain Spark — 17–20 min</li>
+<li>GNIUS STORM — 5 min</li>
+</ol>
+</section>
+<section class="overview-block">
+<h3>Entregable del Micro-Proyecto</h3>
+<ul>
+<li>Un diagrama de flujo que descomponga una tarea compleja en 4-5 pasos lógicos.</li>
+</ul>
+</section>
+<section class="overview-block">
+<h3>Criterios de calidad</h3>
+<ul>
+<li>Claridad en la descomposición de la tarea.</li>
+<li>Lógica y secuencia coherente de los pasos.</li>
+<li>Aplicación del concepto de multi-agentes o roles especializados.</li>
+<li>Representación visual efectiva del flujo.</li>
+</ul>
+</section>
+<section class="overview-block">
+<h3>Materiales y preparación</h3>
+<ul>
+<li>Proyector e internet.</li>
+<li>Acceso a LLM y herramienta de diagramación (ej. Miro, draw.io).</li>
+<li>Plantilla de ejemplo de diagrama de flujo lista.</li>
+</ul>
+</section>
+</div>
+</section>
+<!-- 1) Saludo Interactivo con IA -->
+<section class="activity-card" id="activity-1">
+<h2 class="activity-title">Saludo Interactivo con IA</h2>
+<p class="activity-purpose">Establecer tono profesional y conectar con el foco de la misión: la gestión de agentes de IA.</p>
+<div class="steps">
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 1 — Bienvenida y foco</h3>
+<p class="step-instructions">Proyectar Diapositiva 2. Enuncia el foco conceptual en frameworks de IA y su relevancia profesional.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Equipo: hoy profundizaremos en los frameworks de IA, específicamente en cómo los agentes complejos descomponen tareas. Esto es fundamental para pensar como un manager de proyectos de IA, definiendo secuencias lógicas de trabajo para sistemas autónomos.</p>
+</div>
+</div>
+</article>
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 2 — Activación con Xolo</h3>
+<p class="step-instructions">Cada estudiante abre su chat con Xolo y envía un saludo con su perfil de aprendizaje e intereses, haciendo referencia a la misión.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Activen a Xolo con su perfil e intereses. Un mensaje como: "Hola Xolo, soy [Nombre], perfil [X]; me interesa [Y]. Estoy en la Misión 16 sobre frameworks y descomposición de tareas." Confirmen que comprendieron los criterios de la sesión.</p>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- 2) “I Can” + Desafío -->
+<section class="activity-card" id="activity-2">
+<h2 class="activity-title">“I Can Statement” + Desafío</h2>
+<p class="activity-purpose">Explicitar metas de aprendizaje y presentar el reto de diseño de flujos de trabajo para agentes de IA.</p>
+<div class="steps">
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 1 — Presenta el reto</h3>
+<p class="step-instructions">Proyectar Diapositiva 3. Describe el reto de diseñar un flujo de trabajo para un agente de IA y la meta observable.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">El reto de hoy es diseñar el flujo de trabajo para un agente de IA que resuelva una tarea compleja. Evaluaremos su capacidad para descomponer esta tarea en 4-5 pasos lógicos y representarlos en un diagrama de flujo coherente.</p>
+</div>
+</div>
+</article>
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 2 — Escribe tu “I Can”</h3>
+<p class="step-instructions">Proyectar Diapositiva 4. Cada estudiante redacta 1-2 "I Can" concretos alineados al entregable del micro-proyecto.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Ahora, formulen su "I Can Statement" para esta misión. Por ejemplo: "Puedo diseñar un flujo de trabajo para un agente de IA, descomponiendo una tarea compleja en pasos lógicos y visualizándolos en un diagrama." Escríbanlo en una frase concisa.</p>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- 3) AI GYM -->
+<section class="activity-card" id="activity-3">
+<h2 class="activity-title">AI GYM</h2>
+<p class="activity-purpose">Formalizar los criterios y el framework de descomposición de tareas para agentes de IA.</p>
+<div class="steps">
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 1 — Marco del día: Descomposición de Tareas</h3>
+<p class="step-instructions">Proyectar Diapositiva 5. Introduce el concepto de descomposición de tareas para agentes de IA, contrastando 'súper-agente' vs. 'equipo' de agentes especializados.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">El marco clave de hoy es la descomposición de tareas. Esto agrega valor al permitirnos gestionar la complejidad de agentes de IA, evitando que un solo 'súper-agente' intente hacer todo. En su lugar, pensaremos en un 'equipo' de agentes especializados. Eviten errores como tareas ambiguas o secuencias ilógicas. Usen la claridad y la especialización para validar sus resultados.</p>
+</div>
+</div>
+</article>
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 2 — Mini-demostración de flujo</h3>
+<p class="step-instructions">Proyectar Diapositiva 6. Construye en vivo un ejemplo mínimo de descomposición de una tarea sencilla para un agente de IA.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Observen cómo una tarea como 'planificar un viaje' puede descomponerse en 'buscar vuelos', 'reservar alojamiento', 'planificar itinerario'. Cada una podría ser una sub-tarea para un agente especializado. ¿Se entiende la lógica de dividir la tarea? ¿Se ve la secuencia clara?</p>
+</div>
+</div>
+</article>
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 3 — Check rápido</h3>
+<p class="step-instructions">Proyectar Diapositiva 7. Verifica comprensión con 2 preguntas breves sobre la descomposición de tareas.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Pregunta 1: ¿Cuál es el beneficio principal de descomponer una tarea para un agente de IA? Pregunta 2: ¿Qué diferencia a un 'súper-agente' de un 'equipo de agentes especializados' en este contexto?</p>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- 4) Brain Spark -->
+<section class="activity-card" id="activity-4">
+<h2 class="activity-title">Brain Spark</h2>
+<p class="activity-purpose">Producir el entregable tangible: un diagrama de flujo para un agente de IA.</p>
+<div class="steps">
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 1 — Producción del diagrama de flujo</h3>
+<p class="step-instructions">Proyectar Diapositiva 8. Diseña un diagrama de flujo que descomponga una tarea compleja (a elegir) en 4-5 pasos lógicos, pensando en cómo un agente de IA la ejecutaría. Considera las opciones: escribir el master prompt, simular ejecución manual o diseñar la UI de la app.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">N/A</p>
+</div>
+</div>
+</article>
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 2 — Iteración y mejora</h3>
+<p class="step-instructions">Proyectar Diapositiva 9. Refina la descomposición, asegurando que cada paso sea claro, ejecutable por un agente y que la secuencia sea óptima. Añade notas sobre posibles sub-agentes o roles.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Antes de cerrar: valida que cada paso sea atómico y que la transición entre ellos sea lógica. Si no es así, ajusta la descomposición o considera un sub-agente para esa tarea. ¿Podría cada paso ser ejecutado por un micro-servicio o un agente especializado?</p>
+</div>
+</div>
+</article>
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 3 — Evidencia de resultado</h3>
+<p class="step-instructions">Proyectar Diapositiva 10. Solicita el diagrama de flujo final (captura de pantalla o enlace al archivo) como evidencia.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Suban la evidencia de su diagrama de flujo al canal indicado. Nombren su archivo: M16_Frameworks_[Nombre].</p>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- 5) GNIUS STORM -->
+<section class="activity-card" id="activity-5">
+<h2 class="activity-title">GNIUS STORM</h2>
+<p class="activity-purpose">Exhibición breve de diseños, síntesis de aprendizajes y conexión profesional.</p>
+<div class="steps">
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 1 — Showcase relámpago</h3>
+<p class="step-instructions">2-3 estudiantes muestran su diagrama de flujo y explican una decisión clave en la descomposición (30-45 s c/u).</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Compartan su diagrama de flujo. En 30 segundos, describan la tarea que descompusieron y la decisión más importante que tomaron al dividirla en pasos lógicos.</p>
+</div>
+</div>
+</article>
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 2 — Cierre ejecutivo</h3>
+<p class="step-instructions">Proyectar Diapositiva 11. Redacta síntesis con: (a) 1 aprendizaje clave, (b) 1 criterio de calidad que marcó la diferencia, (c) siguiente paso aplicable fuera del aula.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Síntesis: Hoy aprendimos que la clave para construir agentes de IA robustos es la descomposición de tareas. El criterio de calidad que marcó la diferencia fue la claridad y la atomicidad de cada paso. El siguiente paso aplicable fuera del aula es aplicar esta lógica de descomposición a cualquier problema complejo, ya sea un proyecto escolar o un desafío personal, antes de intentar resolverlo.</p>
+</div>
+</div>
+</article>
+</div>
+</section>
+</main>
+</div>
+<script src="script.js"></script>
 </body>
-
 </html>
